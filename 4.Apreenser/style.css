@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    --margin-lados: 12rem;
+    --margin-vertical: 7rem;
+    --margin-vertical-card: 2.5rem;
+    --subtitulos: 3em;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", serif;
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: #2B2B2B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: var(--margin-lados);
+    width: 150px;
+    height: 70px;
+    margin-bottom: 1rem;
+}
+
+.navegacao {
+    margin-right: var(--margin-lados);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.item-nav {
+    padding: 1rem 1.8rem;
+    border: .1rem solid #fed001;
+    color: #fed001;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: .01rem;
+}
+
+.item-nav:hover {
+    font-weight: 700;
+    background-color: #FFB100;
+    color: black;
+    cursor: pointer;
+}
+
+.main-section {
+    width: 100%;
+    height: 85vh;
+    background-image: url(imagens/Post\ Instagram\ Dia\ Internacional\ da\ Mulher\ Amarelo\ \(1\).png), linear-gradient(to top, #fed001, white);    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 85%;
+}
+
+.main-conteudo {
+    height: 100%;
+    margin-left: var(--margin-lados);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5em;
+}
+
+.main-conteudo h1 {
+    font-size: 5em;
+    width: 35%;
+    line-height: 1.05em;
+}
+
+.saiba-mais {
+    display: inline-block;
+    font-size: 1.75em;
+    padding: 1rem 3rem;
+    background-color:#FFB100;
+    border-radius: .6rem;
+    box-shadow: .2rem .2rem .5rem black;
+    transition: all .1s linear;
+}
+
+.saiba-mais:hover,
+.ver-mais-cursos:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cursos {
+    margin: var(--margin-vertical) var(--margin-lados);
+    text-align: center;
+}
+
+.cursos h2 {
+    font-size: var(--subtitulos);
+    margin-bottom: var(--margin-vertical);
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    height: auto;
+    margin-bottom: var(--margin-vertical);
+}
+
+.card {
+    box-shadow: 0 0 .2rem #2B2B2B;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: var(--margin-vertical-card);
+}
+
+.card h3 {
+    margin-bottom: var(--margin-vertical-card);
+    padding: 0 1.8rem;
+    font-size: 2.3em;
+    color: #2B2B2B;
+}
+
+.card p {
+    margin-bottom: var(--margin-vertical-card);  
+    padding: 0 1.8rem;
+    font-size: 1.6em;
+    color: #2B2B2B;
+    line-height: 2rem;
+}
+
+.ver-mais-cursos {
+    display: inline-block;
+    font-size: 1.75em;
+    background-color:#FFB100;
+    border-radius: .6rem;
+    box-shadow: .2rem .2rem .5rem black;
+    transition: all .1s linear;
+    padding: 1rem 3rem; 
+}
+
+.escola {
+    height: 75vh;
+    width: 100%;
+    background-color: #184D7F;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: var(--margin-vertical);
+}
+
+.imagem-escola {
+    background-image: url(imagens/nossa-escola.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: bottom;
+    flex: 1;
+    height: 100%;
+    margin-left: var(--margin-vertical);
+}
+
+.infos-escola {
+    flex: 1;
+}
+
+.infos-escola h3 {
+    font-size: var(--subtitulos);
+    font-weight: 400;
+    color: white;
+    margin-top: var(--margin-vertical);
+    margin-bottom: 3rem;    
+}
+
+.infos-escola p {
+    font-size: 1.6em;
+    color: white;
+    margin-right: var(--margin-lados);
+    line-height: 1.5em;
+}
+
+.contato {
+    width: 100%;
+}
+
+.contato h3 {
+    text-align: center;
+    font-size: var(--subtitulos);
+    font-weight: 500;
+    margin-bottom: var(--margin-vertical);
+}
+
+.mapa-e-infos {
+    margin: 0 var(--margin-lados);
+    width: 80%;
+    height: 80%; 
+}
+
+.contato img {
+    text-align: center;
+    width: 100%;
+}
+
+.infos-contato {
+    text-align: end;
+    margin-top: 1rem;
+    font-size: 1.4em;
+    margin-bottom: var(--margin-vertical);
+}
+
+footer {
+    padding: var(--margin-vertical-card) 0;
+    background-color: #2B2B2B;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+}
+

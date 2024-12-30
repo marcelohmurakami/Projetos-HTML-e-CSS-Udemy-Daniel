@@ -1,0 +1,60 @@
+a[href="#"]:not(.link-ok) {
+    color: red;
+    opacity: .2;
+}
+
+a[href^="http"] {
+    color: red;
+}
+
+a[href$=".pdf"] {
+    color: green;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+}
+
+
+
+
+div :first-child {
+    color: red;
+}
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: orange;
+}
+
+p:nth-child(4) {
+    background-color: blue;
+}
+
+p:nth-of-type(1) {
+    background-color: pink;
+}
+
+p:last-of-type {
+    color: blueviolet;
+}
+
+li:nth-child(odd) {
+    background-color: bisque;
+}
+
+li:nth-child(even) {
+    background-color: gray;
+}
+
+li:nth-child(2n) {
+    text-decoration: dotted;
+}
+
+li:first-child,
+li:nth-child(3n + 1) {
+    background-color: blue;
+}

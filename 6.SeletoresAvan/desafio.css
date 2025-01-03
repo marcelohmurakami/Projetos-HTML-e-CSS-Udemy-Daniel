@@ -1,0 +1,23 @@
+a[target="_blank"]::after {
+    content: "💙";
+}
+
+a[href$=".pdf"]::before {
+    content: "🥉";
+}
+
+input[type="checkbox"]:checked + label {
+    color: green;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+    color: red;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: blue;
+}
+
+li li:nth-child(3) {
+    background-color: yellow;
+}
